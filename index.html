@@ -8,21 +8,26 @@
   </head>
   <body>
     <div class="container">
-      <h1>Weather App</h1>
-      <div class="search-box">
-        <input type="text" id="city-input" placeholder="Enter a city..." />
-        <button onclick="getWeather()">Search</button>
-      </div>
-      <div class="weather-details">
-        <h2 id="city-name"></h2>
-        <p id="date-time"></p>
-        <p id="weather-desc"></p>
-        <p id="temperature"></p>
-        <p id="humidity"></p>
-        <p id="wind-speed"></p>
-      </div>
-      <div class="forecast" id="forecast"></div>
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Enter a city..." value="Addis Ababa">
+      <button onclick="getWeather()">Search</button>
     </div>
-    <script src="style.js"></script>
-  </body>
+    <div class="weather-info">
+      <h2 id="city-name"></h2>
+      <div class="current-weather">
+        <span id="current-temp"></span>
+        <img id="current-icon" src="" alt="weather icon">
+      </div>
+      <p id="weather-desc"></p>
+      <p>Humidity: <span id="humidity"></span>%</p>
+      <p>Wind: <span id="wind-speed"></span> km/h</p>
+    </div>
+    <div class="user-info">
+      <h3>User Information</h3>
+      <p>Name: <span id="user-name"></span></p>
+      <p>Email: <span id="user-email"></span></p>
+      <p>City: <span id="user-city"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </html>
