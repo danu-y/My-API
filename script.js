@@ -1,5 +1,5 @@
-const apiKey = "YOUR_API_KEY"; // Replace with your actual API key
-const baseURL = "https://api.openweathermap.org/data/2.5/";
+const apiKey = "76e38afd41835302tc2b2d326b8154o1"; // Replace with your actual API key
+const baseURL = "https://jsonplaceholder.typicode.com/users/1";
 
 async function getWeather() {
   const city = document.getElementById("city-input").value;
